@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    background-image: url(https://t2conline.com/wp-content/uploads/2018/01/INMO5435_ride-sharing_graphic_05.jpg);
+}   
+h1 { 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: whitesmoke;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding:15px;
+    margin-top:10px;
+}
+h2 { 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-style: oblique;
+    text-decoration: underline;
+    margin:3px;
+    padding:8px;
+    
+}
+header.h2{
+    margin-top: 30px;;
+}
+.driver_butn{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top:100px;
+ 
+}
+.drivee_butn{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  
+}
+.driver{
+    font-size: x-large;
+   font-family:'Courier New', Courier, monospace;
+  
+}
+.drivee{
+    font-size: x-large;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#pot {
+    bottom: 15%;
+    display: block;
+    position: absolute;
+    animation: linear infinite alternate;
+    animation-name: run;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes run {
+      0% {
+        left: 0;
+        transform: translateX(0);
+      }
+      100% {
+        left: 100%;
+        transform: translateX(-100%);
+      }
+  }
+
+
+
+
+   
+

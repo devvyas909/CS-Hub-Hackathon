@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="drivee_info.css">
+    <script src="drivee.js"></script>
+    <title>Drivee page</title>
+</head>
+
+<body>
+    <div class="heading">
+    <h1>Driver list</h1>
+</div>
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="emp-table">
+        <thead>
+            <th col-index = 1>Name</th>
+            <th col-index = 2>Gender
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+
+            <th col-index = 3>Location
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 4>Price for seat
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 5> Departure time from location
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 6> Departure time from campus
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 7> Email
+            </th>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>Benny</td>
+                <td>M</td>
+                <td>Brampton</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>1-4</td>
+                <td>benzino@gmail.co</td>
+            </tr>
+            <tr>
+                <td>Kim</td>
+                <td>F</td>
+                <td>Mississauga</td>
+                <td>5-10</td>
+                <td>10-1</td>
+                <td>4-6</td>
+                <td>kiki@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Leroy</td>
+                <td>M</td>
+                <td>Scarbrough</td>
+                <td>10-20</td>
+                <td>10-1</td>
+                <td>7-10</td>
+                <td>yardiman@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>F</td>
+                <td>Scarbrough</td>
+                <td>10-20</td>
+                <td>1-5</td>
+                <td>1-4</td>
+                <td>sssssssss@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sally</td>
+                <td>F</td>
+                <td>Vaughn</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>1-4</td>
+                <td>sasaassa@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rihanna</td>
+                <td>F</td>
+                <td>Brampton</td>
+                <td>5-10</td>
+                <td>7-10</td>
+                <td>4-6</td>
+                <td>riri@gmail.com</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>M</td>
+                <td>Scarbrough</td>
+                <td>10-20</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>ghost@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Thomas</td>
+                <td>M</td>
+                <td>Markham</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>4-6</td>
+                <td>tommy@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Steeve</td>
+                <td>M</td>
+                <td>Mississauga</td>
+                <td>5-10</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>stevo@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Angela</td>
+                <td>F</td>
+                <td>Scarbrough</td>
+                <td>10-20</td>
+                <td>7-10</td>
+                <td>4-6</td>
+                <td>angiev@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mason</td>
+                <td>M</td>
+                <td>Markham</td>
+                <td>5-10</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>mase@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Frank</td>
+                <td>M</td>
+                <td>Brampton</td>
+                <td>1-5</td>
+                <td>7-10</td>
+                <td>4-6</td>
+                <td>franky@gmail.com</td>
+            </tr>
+            
+
+        </tbody>
+    </table>
+
+    <script>
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+        
+    </script>
+</div>
+</div>
+</body>
+
+</html>
